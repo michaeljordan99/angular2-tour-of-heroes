@@ -5,11 +5,13 @@ label {
   color: #607D8B;
   font-weight: bold;
 }
+
 input {
   height: 2em;
   font-size: 1em;
   padding-left: .4em;
 }
+
 button {
   margin-top: 20px;
   font-family: Arial;
@@ -19,11 +21,27 @@ button {
   border-radius: 4px;
   cursor: pointer; cursor: hand;
 }
+
 button:hover {
   background-color: #cfd8dc;
 }
+
 button:disabled {
   background-color: #eee;
   color: #ccc; 
   cursor: auto;
+}
+
+img.avatar {
+    width: 100px;display: block;margin: 0 auto;
+}
+
+#container {
+    margin-top: 25px;
+}
+
+#floated {
+    float: right;
+    width: 150px;
+    margin: 15px;
 }
