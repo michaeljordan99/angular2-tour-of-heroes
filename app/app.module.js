@@ -15,7 +15,7 @@ var forms_1 = require('@angular/forms');
 var http_1 = require('@angular/http');
 // Imports for loading & configuring the in-memory web api
 var angular2_in_memory_web_api_1 = require('angular2-in-memory-web-api');
-var in_memory_data_service_1 = require('./in-memory-data.service');
+var in_memory_data_service_1 = require('./data/in-memory-data.service');
 var app_component_1 = require('./app.component');
 var dashboard_component_1 = require('./dashboard/dashboard.component');
 var heroes_component_1 = require('./hero/heroes.component');
