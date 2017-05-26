@@ -1,4 +1,4 @@
-import './rxjs-extensions';
+import './rxjs/rxjs-extensions';
 
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
