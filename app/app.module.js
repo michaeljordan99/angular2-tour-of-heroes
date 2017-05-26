@@ -21,7 +21,7 @@ var dashboard_component_1 = require('./dashboard/dashboard.component');
 var heroes_component_1 = require('./heroes.component');
 var hero_detail_component_1 = require('./hero/detail/hero-detail.component');
 var hero_service_1 = require('./hero.service');
-var hero_search_component_1 = require('./hero-search.component');
+var hero_search_component_1 = require('./hero/search/hero-search.component');
 var app_routing_1 = require('./app.routing');
 var AppModule = (function () {
     function AppModule() {
