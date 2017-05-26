@@ -1,15 +1,12 @@
-<h2 id="my-heros-h2">My Heroes</h2>
-<div>
-<form id="add-hero-form">
-  <div class="form-group">
-    <label for="hero-name">Hero Name</label>
-    <input type="text" #heroName class="form-control" id="hero-name">
-  </div>
-  <button (click)="add(heroName.value); heroName.value=''" class="btn btn-default">Add</button>
-</form>
-</div>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-3">
+    <form id="add-hero-form">
+      <div class="form-group">
+        <label for="hero-name">Hero Name</label>
+        <input type="text" #heroName class="form-control" id="hero-name">
+      </div>
+      <button (click)="add(heroName.value); heroName.value=''" class="btn btn-default">Add</button>
+    </form>
     <ul class="heroes">
       <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
           [class.selected]="hero === selectedHero">
@@ -23,11 +20,50 @@
   <div class="col-md-8">
     <div *ngIf="selectedHero">
       <h2>
-        {{selectedHero.name | uppercase}} is my hero
+        Hey {{selectedHero.name | uppercase}} is my freaking hero bro!
       </h2>
+      <br/>
       <form class="form-inline">
-      <button (click)="gotoDetail()" class="form-control">View Details</button>
+      <button (click)="gotoDetail()" class="form-control">Let's go look at the Details</button>
       </form>
+      <div id="container">
+          <div id="floated">
+            <img class="avatar" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/user-male-circle-blue-512.png" />
+          </div>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            <br/><br/>
+            <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+            <br/>
+            <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+            duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            </p>
+      </div>
     </div>
   </div>
 </div>
