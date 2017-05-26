@@ -1,8 +1,8 @@
-<h2>My Heroes</h2>
+<h2 id="my-heros-h2">My Heroes</h2>
 <div>
-<form class="form-inline">
+<form id="add-hero-form">
   <div class="form-group">
-    <label for="exampleInputName2">Hero Name</label>
+    <label for="hero-name">Hero Name</label>
     <input type="text" #heroName class="form-control" id="hero-name">
   </div>
   <button (click)="add(heroName.value); heroName.value=''" class="btn btn-default">Add</button>

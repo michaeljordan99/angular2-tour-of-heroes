@@ -59,3 +59,13 @@ button.delete {
   background-color: gray !important;
   color:white;
 }
+
+#add-hero-form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+#my-heros-h2 {
+    margin-left: 20px;
+    color: gray;
+}
