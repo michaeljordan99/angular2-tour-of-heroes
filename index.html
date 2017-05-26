@@ -4,7 +4,9 @@
     <title>Angular 2 QuickStart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+
     <!-- 1. Load libraries -->
      <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -17,8 +19,99 @@
       System.import('app').catch(function(err){ console.error(err); });
     </script>
   </head>
+
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+
+   <div class="row">
+
+        <div class="side-menu">
+
+            <nav class="navbar navbar-default" role="navigation">
+
+                <div class="navbar-header">
+
+                    <div class="brand-wrapper">
+
+                        <button type="button" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <div class="input-group search">
+                            <input class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default"  style="height: 34px;" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                        </div>
+
+                        <!-- Search body -->
+                        <div id="search" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <form class="navbar-form" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                    <button type="submit" class="btn btn-default "><span class="glyphicon glyphicon-ok"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Main Menu -->
+                <div class="side-menu-container">
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Dashboard</a></li>
+                        <li class="active"><a href="/"><span class="glyphicon glyphicon-user"></span> Benefits</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-time"></span> Timesheets</a></li>
+
+                        <!-- Dropdown-->
+                        <li class="panel panel-default" id="dropdown">
+                            <a data-toggle="collapse" href="#dropdown-lvl1">
+                                <span class="glyphicon glyphicon-transfer"></span> Workflows <span class="caret"></span>
+                            </a>
+
+                            <!-- Dropdown level 1 -->
+                            <div id="dropdown-lvl1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="#">Workflow 1</a></li>
+                                        <li><a href="#">Workflow 2</a></li>
+                                        <li><a href="#">Workflow 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Charts</a></li>
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+
+        </div>
+
+        <!-- Main Content -->
+        <div class="container-fluid container-main-content">
+
+            <div class="side-body">
+
+                <my-app>
+                 
+                  <div style="margin: 20px;">Loading...</div>
+                 
+                </my-app>
+
+            </div>
+
+        </div>
+        <footer>&copy; 2017 Footer Goes Here</footer>
+    </div>
+
   </body>
 </html>
