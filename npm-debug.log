@@ -7,7 +7,7 @@
 6 silly lifecycle angular2-quickstart@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle angular2-quickstart@1.0.0~start: angular2-quickstart@1.0.0
 8 verbose lifecycle angular2-quickstart@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle angular2-quickstart@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/michaeljordan/code/angular2-tour-of-heroes/node_modules/.bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/usr/local/mongodb/bin
+9 verbose lifecycle angular2-quickstart@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/michaeljordan/code/angular2-tour-of-heroes/node_modules/.bin:/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/usr/local/mongodb/bin
 10 verbose lifecycle angular2-quickstart@1.0.0~start: CWD: /Users/michaeljordan/code/angular2-tour-of-heroes
 11 silly lifecycle angular2-quickstart@1.0.0~start: Args: [ '-c', 'tsc && concurrently "npm run tsc:w" "npm run lite" ' ]
 12 silly lifecycle angular2-quickstart@1.0.0~start: Returned: code: 2  signal: null
