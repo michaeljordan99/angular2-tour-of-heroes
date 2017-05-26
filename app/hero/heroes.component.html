@@ -1,0 +1,33 @@
+<h2>My Heroes</h2>
+<div>
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Hero Name</label>
+    <input type="text" #heroName class="form-control" id="hero-name">
+  </div>
+  <button (click)="add(heroName.value); heroName.value=''" class="btn btn-default">Add</button>
+</form>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <ul class="heroes">
+      <li *ngFor="let hero of heroes" (click)="onSelect(hero)"
+          [class.selected]="hero === selectedHero">
+        <span class="badge">{{hero.id}}</span>
+        <span>{{hero.name}}</span>
+        <a (click)="delete(hero); $event.stopPropagation()" 
+          style="float: right;margin: 3px;padding: 3px;">X</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    <div *ngIf="selectedHero">
+      <h2>
+        {{selectedHero.name | uppercase}} is my hero
+      </h2>
+      <form class="form-inline">
+      <button (click)="gotoDetail()" class="form-control">View Details</button>
+      </form>
+    </div>
+  </div>
+</div>
